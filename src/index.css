@@ -1,0 +1,156 @@
+/* Reset and Basic Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Assuming Inter font, adjust if needed */
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px; /* Wider container */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header Styles */
+header {
+  background: #1e1e1e; /* Darker header */
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid #333; /* Subtle border */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem; /* Larger title */
+}
+
+/* Candy List Styles */
+.candy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Smaller cards */
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.candy-card {
+  background: #1e1e1e; /* Dark card background */
+  border: 1px solid #333; /* Subtle border */
+  border-radius: 4px; /* Smaller radius */
+  padding: 1rem;
+  box-shadow: none; /* Remove box-shadow */
+  transition: background-color 0.2s ease-in-out; /* Smooth background transition */
+  display: flex;
+  flex-direction: column;
+}
+
+.candy-card:hover {
+  background-color: #2a2a2a; /* Slightly lighter on hover */
+  transform: none; /* Remove transform */
+}
+
+.candy-card h2 {
+  margin-top: 0;
+  color: #fff; /* White heading */
+  font-size: 1rem; /* Smaller heading */
+  margin-bottom: 0.5rem;
+  font-weight: 500; /* Medium font-weight */
+}
+
+.candy-card h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.candy-card p {
+  margin: 0.2rem 0;
+  color: #aaa; /* Lighter text */
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.candy-card .win-percent {
+  font-weight: 600; /* Bolder win percent */
+  margin-top: auto;
+  color: #fff;
+}
+
+/* Candy Details Styles */
+.candy-details {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 1.5rem; /* More padding */
+  margin: 2rem 0;
+  box-shadow: none;
+}
+
+.candy-details h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.5rem; /* Larger heading */
+  margin-bottom: 1rem;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px; /* Slightly smaller chart */
+  margin: 1.5rem auto;
+}
+
+/* Button Styles */
+.back-button {
+  background-color: #007aff; /* Blue button */
+  color: white;
+  padding: 8px 12px; /* Smaller padding */
+  text-decoration: none;
+  border-radius: 4px; /* Smaller radius */
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Data Description Styles */
+.data-description {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.data-description h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.data-description p {
+  line-height: 1.6;
+  color: #aaa;
+  font-size: 0.875rem;
+}
+
+.data-description a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+.data-description a:hover {
+    text-decoration: underline;
+}
